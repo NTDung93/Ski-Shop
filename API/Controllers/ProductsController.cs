@@ -23,6 +23,7 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
+            //abc
             return await _context.Products.FindAsync(id);
         }
     }
